@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        tools:context=".ScreenTwo">
+
+        <TextView
+            android:id="@+id/main_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:text="Choose what to learn today?"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textFontWeight="400"
+            />
+
+        <LinearLayout
+            android:id="@+id/numbers"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg"
+            android:fontFamily="sans-serif-thin"
+            android:textAllCaps="false"
+            android:textFontWeight="400"
+            android:textSize="25dp"
+            app:cornerRadius="50dp"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_header">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/numbers"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numbers"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/letters"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg"
+            android:fontFamily="sans-serif-thin"
+            android:textAllCaps="false"
+            android:textFontWeight="400"
+            android:textSize="25dp"
+            app:cornerRadius="50dp"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_header">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/letters"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Letters"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/body"-->
+<!--            android:layout_width="160dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/layout_bg"-->
+<!--            android:fontFamily="sans-serif-thin"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textFontWeight="400"-->
+<!--            android:textSize="25dp"-->
+<!--            app:cornerRadius="50dp"-->
+<!--            android:padding="20dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/numbers">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:src="@drawable/hand"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Body"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/colors"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg"
+            android:fontFamily="sans-serif-thin"
+            android:textAllCaps="false"
+            android:textFontWeight="400"
+            android:textSize="25dp"
+            app:cornerRadius="50dp"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/letters">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/colors"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Colors"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/food"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg"
+            android:fontFamily="sans-serif-thin"
+            android:textAllCaps="false"
+            android:textFontWeight="400"
+            android:textSize="25dp"
+            app:cornerRadius="50dp"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/numbers">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/food"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/animals"-->
+<!--            android:layout_width="160dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/layout_bg"-->
+<!--            android:fontFamily="sans-serif-thin"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textFontWeight="400"-->
+<!--            android:textSize="25dp"-->
+<!--            app:cornerRadius="50dp"-->
+<!--            android:padding="20dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/colors">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:src="@drawable/animals"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Animals"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textColor="@color/white"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

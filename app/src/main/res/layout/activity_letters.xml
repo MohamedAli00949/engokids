@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".letters">
+
+    <LinearLayout
+        android:id="@+id/header"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="8dp">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_btn"
+            android:padding="10dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="Letters"
+            android:textColor="@color/white"
+            android:textFontWeight="500"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:fillViewport="false"
+        android:id="@+id/side_bar">
+        <LinearLayout
+            android:id="@+id/side_bar_content"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            >
+
+            <Button
+                android:id="@+id/a_letter"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:padding="10dp"
+                android:text="a"
+                android:textSize="20dp"
+                app:cornerRadius="40dp" />
+
+            <Button
+                android:text="b"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/b_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="c"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/c_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="d"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/d_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="e"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/e_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="f"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/f_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="g"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/g_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="h"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/h_letter"
+                />
+
+            <Button
+                android:text="i"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/i_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="j"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/j_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="k"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/k_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="l"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/l_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="m"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/m_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="n"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/n_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="o"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/o_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="p"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/p_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="q"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/q_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="r"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/r_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="s"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/s_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="t"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/t_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="u"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/u_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="v"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/v_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="w"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/w_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="x"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/x_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="y"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/y_letter"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:text="z"
+                android:layout_width="50dp"
+                android:padding="10dp"
+                android:layout_height="60dp"
+                android:textSize="20dp"
+                app:cornerRadius="40dp"
+                android:id="@+id/z_letter"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/alphabet_details"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintLeft_toRightOf="@+id/side_bar"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/layout_bg"
+        android:backgroundTint="@color/purple_700"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:src="@drawable/apple"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/letter_icon"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Aa"
+            android:textColor="@color/white"
+            android:textFontWeight="900"
+            android:textSize="75dp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/letter_icon"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="30dp"
+            android:id="@+id/letter_cap_small"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/letter_cap_small"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="A"
+                android:textColor="#C7C7C7"
+                android:textFontWeight="900"
+                android:textSize="60dp"
+                android:textAlignment="center"
+                android:id="@+id/letter_cap"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="pple"
+                android:textColor="@color/white"
+                android:textFontWeight="900"
+                android:textSize="60dp"
+                android:textAlignment="center"
+                android:layout_marginTop="30dp"
+                android:id="@+id/letter_word"
+                />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
