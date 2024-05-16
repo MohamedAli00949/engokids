@@ -1,0 +1,3 @@
+<style name="RoundedButton" parent="@style/Widget.AppCompat.Button">
+    <item name="android:cornerRadius">16dp</item>
+</style>
